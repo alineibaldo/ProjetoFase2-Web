@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+
+    
+    <style>
+
+        form
+        {
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+        }
+
+        div
+        {
+            background-color: plum;
+        }
+        .class_input_name
+        {
+            width: 300px;
+        }
+
+        .class_botao_enviar
+        {
+            width: 100px;
+            height: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            font-weight: bold;
+        }
+    </style>
+
+    <title>Ficha de Cadastro</title>
+</head>
+
+<body>
+    <div>
+        <form action="https://formsubmit.co/aline_ibaldo@hotmail.com" method="POST">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <label>Nome:</label>
+                <input type="text" name="Nome" placeholder="Nome completo" class="class_input_name" required>
+                <br><br>
+                <label>CPF:</label>
+                <input type="text" name="CPF" placeholder="Digite o CPF" pattern="[0-9]{11}" required>
+                <label>Data de Nascimento:</label>
+                <input type="text" name="Nascimento" placeholder="DDMMAAAA" pattern="[0-9]{8}" required>
+                <label>Masculino</label>
+                <input type="radio" value="masculino">
+                <label>Feminino</label>
+                <input type="radio" value="feminino">
+            </fieldset>
+            <br>
+            <fieldset>                
+                <legend>Endereço</legend>
+                <label>Logradouro:</label>
+                <input type="text" name="logradouro" placeholder="Nome da rua" required>
+                <label>Número:</label>
+                <input type="text" name="numero" placeholder="Número" required>
+                <label>Complemento:</label>
+                <input type="text" name="complemento" placeholder="Apto, Bloco, Prédio">
+                <br>
+                <br>
+                <label>Estado:</label>
+                <select name="estado">
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="GO">Goias</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RR">Roraima</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergie</option>
+                    <option value="TO">Tocantins</option>
+                </select>
+                <label>Cidade:</label>
+                <input type="text" name="cidade" placeholder="Informe a cidade" required>
+            </fieldset>
+            <br>
+            <center>
+            <input class="class_botao_enviar" type="submit">
+            </center>
+            <br><br>
+        </form>
+    </div>    
+</body>
+</html>
+    
+</body>
+</html>
